@@ -1,0 +1,78 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+### Education
+**Columbia University Mailman School of Public Health** 
+*Expected May 2021*
+Epidemiology MPH, Applied Biostatistics Certificate
+
+**Emory University**
+*August 2015 - May 2019*
+Anthropology and Human Biology BS, Global Health Minor
+
+***
+
+### Research & Professional Experience
+
+**Columbia University Medical Center, Department of Obstetrics and Gynecology**
+*Graduate Data Analyst*
+
+* Cleaned data within the UPA study, analyzed a variety of data using epidemiological and biostatistical techniques
+* Summarized research into a poster presentation
+
+
+**Columbia Mailman School of Public Health**
+*Research Assistant and Clinical Coordinator*
+
+* Conduct phone calls and follow-up with 2,000+ patients from the National Breast Cancer Registry
+* Analyze, sort and clean data from a cohort of 30,000+ patients starting from 1995
+* Attend team meetings of 10+ researchers, principal investigators and doctoral students
+
+
+**Emory School of Medicine**
+*Research Assistant*
+
+* Aided in the Graham Lab in the pediatric oncology department focusing on leukemia and brain cancers
+* Learned drug preparation, mice injections through intraperitoneal and oral gavage to test drug efficacy 
+
+***
+
+### Leadership & Community Involvement
+
+**Food Justice Initiative**
+*VP of External Engagement*
+
+* Attend weekly meetings with 6 board members
+* Organize and maintain relationships with community organizations in NYC 
+
+
+**AMWHO 2019 Conference**
+*Director of Finance and Media*
+
+* Attended weekly meetings with 20+ board members and collaborated with the other 5 directors
+* Organized a conference with theme of climate change and sexual and reproductive health
+* Coordinated with local restaurants and organizations for funding and partnerships 
+
+
+**Emory University Department of Anthropology**
+*Teaching Assistant*
+
+* Assisted as a teaching assistant for the Department of Anthropology in Foundations of Global Health.
+* Moderated attendance and participation, graded exit tickets and presented a lecture for 150+ students
+
+***
+
+### Additional Information
+
+**Languages**
+Advanced Chinese Mandarin, fluent in Shanghai dialect, intermediate Spanish
+
+**Software**
+
+* Proficient with MS Office
+* Moderate proficiency in SAS, mySQL, RStudio
+* Limited proficiency in Adobe Photoshop, InDesign

@@ -1,0 +1,22 @@
+---
+title: "Kelley Lou"
+output: 
+  html_document
+---
+
+#### Graduate student, hobby artist and trader joe's lover.
+
+
+<img src="images/headshot.jpg" height=50%, width=50%>
+
+### Hometown
+Rockville, MD
+
+### Graduate Focus
+Epidemiology with a certificate in Applied Biostatistics. I am currently writing my thesis on the association between inflammatory markers and risk of pancreatic cancer.
+
+### Interesting Fact
+I once lived on a farm for a month in Panama conducting interviews with the community on gender roles in agriculture - spoiler alert they still exist.
+
+### What I hope to do post-graduation
+I would love to work in as a data visualization analyst or in a field where I can combine my background in statistics and data with a graphic element.
