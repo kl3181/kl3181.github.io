@@ -8,10 +8,13 @@ output:
 ### Education
 **Columbia University Mailman School of Public Health** 
 *Expected May 2021*
+
 Epidemiology MPH, Applied Biostatistics Certificate
+
 
 **Emory University**
 *August 2015 - May 2019*
+
 Anthropology and Human Biology BS, Global Health Minor
 
 ***
@@ -68,10 +71,10 @@ Anthropology and Human Biology BS, Global Health Minor
 
 ### Additional Information
 
-**Languages**
+**Languages:**
 Advanced Chinese Mandarin, fluent in Shanghai dialect, intermediate Spanish
 
-**Software**
+**Software:**
 
 * Proficient with MS Office
 * Moderate proficiency in SAS, mySQL, RStudio

@@ -5,8 +5,8 @@ navbar:
   right:
     - text: "Resume"
       href: about.html
-    - icon: fa-palette fa-lg
-      href: art.html
+    - text: "Restaurant Inspection Data"
+      href: dashboard.html
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/kelley-lou/
     - icon: fa-envelope fa-lg

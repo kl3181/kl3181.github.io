@@ -18,5 +18,9 @@ Epidemiology with a certificate in Applied Biostatistics. I am currently writing
 ### Interesting Fact
 I once lived on a farm for a month in Panama conducting interviews with the community on gender roles in agriculture - spoiler alert they still exist.
 
-### What I hope to do post-graduation
+### Post-Graduation Plans
 I would love to work in as a data visualization analyst or in a field where I can combine my background in statistics and data with a graphic element.
+
+***
+
+Read more about me [here](about.html)
