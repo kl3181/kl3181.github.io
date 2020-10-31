@@ -18,3 +18,20 @@ instacart =
   select(-add_to_cart_order, -reordered, -eval_set, -order_number, -days_since_prior_order, -aisle_id, -department_id)
 ```
 
+PLOT 3: BAR CHART: When are most people shopping?
+```{r}
+instacart %>% 
+  count(order_hour_of_day) %>% 
+  plot_ly(
+    x = ~order_hour_of_day, 
+    y = ~n, color = ~order_hour_of_day, 
+    type = "bar", 
+    colors = "viridis"
+  ) %>% 
+  layout(
+    title = "When are most people shopping?",
+    xaxis = list(title = "Hour of Day"),
+    yaxis = list(title = "Number of Orders")
+)
+```
+
