@@ -1,10 +1,10 @@
 ---
 title: "Instacart Data"
-output:
-    flexdashboard::flex_dashboard:
+output: 
+  flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
-    source: embed 
+    source: embed
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +29,8 @@ instacart =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### When are most people shopping?
+### Chart A
+
 ```{r}
 instacart %>% 
   group_by(order_dow, order_hour_of_day) %>% 
@@ -54,7 +55,8 @@ instacart %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Order Numbers by Department
+### Chart B
+
 ```{r}
 instacart %>% 
   count(department) %>% 
@@ -68,7 +70,8 @@ instacart %>%
   )
 ```
 
-### Snack Purchases by Time of Day
+### Chart C
+
 ```{r}
 instacart %>% 
   filter(department == "snacks") %>% 
@@ -85,6 +88,5 @@ instacart %>%
     xaxis = list(title = "Snack Aisle"),
     yaxis = list(title = "Hour of Day")
   )
-  
 ```
 

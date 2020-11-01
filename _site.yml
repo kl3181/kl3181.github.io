@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "Resume"
       href: about.html
-    - text: "Instacart Data"
+    - text: "Instacart Dashboard"
       href: dashboard.html
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/kelley-lou/
