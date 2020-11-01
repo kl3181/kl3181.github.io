@@ -43,3 +43,17 @@ instacart %>%
 )
 ```
 
+PLOT 2: Order Numbers by Department
+```{r}
+instacart %>% 
+  count(department) %>% 
+  mutate(department = fct_reorder(department, n)) %>% 
+  plot_ly(
+    x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis") %>% 
+  layout(
+    title = "Order Numbers by Department",
+    xaxis = list(title = "Department"),
+    yaxis = list(title = "Number of Orders")
+  )
+```
+
