@@ -15,17 +15,25 @@ data("instacart")
 
 instacart =
   instacart %>% sample_frac(.5) %>% 
-  select(-add_to_cart_order, -reordered, -eval_set, -order_number, -days_since_prior_order, -aisle_id, -department_id)
+  select(-add_to_cart_order, -reordered, -eval_set, -order_number, -days_since_prior_order, -aisle_id, -department_id) %>% 
+  mutate(
+    order_dow = recode(order_dow, '0' = "Sunday", '1' = "Monday", '2' = "Tuesday", '3' = "Wednesday", '4' = "Thursday", '5' = "Friday", '6' = "Saturday"), 
+    order_dow = factor(order_dow,  levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))
 ```
 
-PLOT 3: BAR CHART: When are most people shopping?
+PLOT 1: BAR CHART: When are most people shopping?
 ```{r}
 instacart %>% 
-  count(order_hour_of_day) %>% 
+  group_by(order_dow, order_hour_of_day) %>% 
+  summarize(num_orders = n()) %>% 
+  mutate(text_label = str_c("Hour: ", order_hour_of_day, "\nDay: ", order_dow, "\nOrders: ", num_orders)) %>% 
   plot_ly(
     x = ~order_hour_of_day, 
-    y = ~n, color = ~order_hour_of_day, 
-    type = "bar", 
+    y = ~num_orders,
+    color = ~order_dow,
+    type = "scatter",
+    mode = "lines",
+    text = ~text_label,
     colors = "viridis"
   ) %>% 
   layout(
