@@ -57,3 +57,23 @@ instacart %>%
   )
 ```
 
+PLOT 3 
+```{r}
+instacart %>% 
+  filter(department == "snacks") %>% 
+  mutate(aisle = forcats::fct_reorder(aisle, order_hour_of_day)) %>% 
+  plot_ly(
+    y = ~order_hour_of_day, 
+    color = ~aisle, 
+    type = "violin", 
+    box = list(visible = T),
+    meanline = list(visible = T),
+    colors = "viridis") %>% 
+  layout(
+    title = "Snack Purchases by Time of Day",
+    xaxis = list(title = "Snack Aisle"),
+    yaxis = list(title = "Hour of Day")
+  )
+  
+```
+
