@@ -1,12 +1,17 @@
 ---
 title: "Instacart Data"
-output: html_document
+output:
+    flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed 
 ---
 
-```{r}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 
+library(flexdashboard)
 library(plotly)
 ```
 
@@ -21,7 +26,10 @@ instacart =
     order_dow = factor(order_dow,  levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")))
 ```
 
-PLOT 1: BAR CHART: When are most people shopping?
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### When are most people shopping?
 ```{r}
 instacart %>% 
   group_by(order_dow, order_hour_of_day) %>% 
@@ -43,7 +51,10 @@ instacart %>%
 )
 ```
 
-PLOT 2: Order Numbers by Department
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Order Numbers by Department
 ```{r}
 instacart %>% 
   count(department) %>% 
@@ -57,7 +68,7 @@ instacart %>%
   )
 ```
 
-PLOT 3 
+### Snack Purchases by Time of Day
 ```{r}
 instacart %>% 
   filter(department == "snacks") %>% 
