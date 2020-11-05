@@ -86,7 +86,8 @@ instacart %>%
   layout(
     title = "Snack Purchases by Time of Day",
     xaxis = list(title = "Snack Aisle"),
-    yaxis = list(title = "Hour of Day")
+    yaxis = list(title = "Hour of Day"),
+    margin = list(b = 100)
   )
 ```
 
